@@ -1,9 +1,10 @@
 import Card from "./Card";
+import styles from "./Cards.module.css";
 
 export default function Cards(props) {
   const { characters } = props;
   return (
-    <div>
+    <div className={styles.container}>
       {characters ? (
         characters.map((character) => (
           <Card
@@ -11,7 +12,7 @@ export default function Cards(props) {
             species={character.species}
             gender={character.gender}
             image={character.image}
-            onClose={() => window.alert("Emulamos que se cierra la card")}
+            onClose={() => alert(character.name)}
             key={character.id}
           />
         ))
