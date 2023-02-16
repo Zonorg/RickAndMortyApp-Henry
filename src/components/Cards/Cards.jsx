@@ -1,8 +1,8 @@
-import Card from "./Card";
+import Card from "../Card/Card.jsx";
 import styles from "./Cards.module.css";
 
 export default function Cards(props) {
-  const { characters } = props;
+  const { characters, onClose } = props;
   return (
     <div className={styles.container}>
       {characters ? (
@@ -12,7 +12,7 @@ export default function Cards(props) {
             species={character.species}
             gender={character.gender}
             image={character.image}
-            onClose={() => alert(character.name)}
+            onClose={() => onClose(character.id)}
             key={character.id}
           />
         ))
