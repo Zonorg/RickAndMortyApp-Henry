@@ -6,6 +6,7 @@ export default function SearchBar(props) {
   function handleChange(event) {
     setText(event.target.value);
   }
+
   return (
     <div className={styles.container}>
       <input

@@ -1,0 +1,15 @@
+.containerNav {
+  background-color: #2ca3ad;
+  padding: 12px;
+  display: flex;
+  gap: 12px
+}
+
+a{
+  text-decoration: none;
+
+}
+
+a:hover{
+  color: black;
+}

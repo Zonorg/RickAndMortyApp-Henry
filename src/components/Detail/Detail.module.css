@@ -1,0 +1,26 @@
+.container {
+  padding: 12px;
+  background-color: rgb(194, 194, 202);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  width: 50em;
+}
+
+h3 {
+  color: aquamarine;
+}
+
+h5 {
+  color: cadetblue;
+}
+
+.botonVolver {
+  background-color: rgb(63, 207, 63);
+  color: beige;
+  font-weight: bold;
+  border-radius: 8px;
+  height: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.botonVolver:hover {
+  cursor: pointer;
+}
