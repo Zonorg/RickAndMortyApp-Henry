@@ -1,15 +1,16 @@
 .containerNav {
   background-color: #2ca3ad;
   padding: 12px;
+  gap: 12px;
   display: flex;
-  gap: 12px
 }
 
-a{
+a:link,
+a:visited {
   text-decoration: none;
-
+  color: black;
+  margin-left: 50px;
 }
-
-a:hover{
+a:hover {
   color: black;
 }

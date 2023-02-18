@@ -1,3 +1,5 @@
+import styles from "../About/About.module.css"
+
 export default function About(props) {
   return (
     <div>

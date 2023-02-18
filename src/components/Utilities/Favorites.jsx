@@ -1,11 +1,12 @@
 import { useSelector } from "react-redux";
 import Card from "../Card/Card";
+import styles from "../Utilities/Favorites.module.css"
 
 export default function Favorites() {
   const myFavorites = useSelector((state) => state.myFavorites); // seleccionar el estado de redux
 
   return (
-    <div style={{ display: "flex" }}>
+    <div className={styles.container} style={{ display: "flex" }}>
       {myFavorites.map((character) => (
         <Card
           name={character.name}

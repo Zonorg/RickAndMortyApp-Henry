@@ -7,8 +7,8 @@ export default function Detail(props) {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  function backToHome(){
-    navigate("/home")
+  function backToHome() {
+    navigate("/home");
   }
 
   useEffect(() => {
@@ -38,10 +38,10 @@ export default function Detail(props) {
       {infoDetail.id ? (
         <div>
           <h3>{infoDetail.name}</h3>
-          <h5>Estado: {infoDetail.status}</h5>
-          <h5>Especie: {infoDetail.species}</h5>
-          <h5>Género: {infoDetail.gender}</h5>
-          <h5>Origen: {infoDetail.origin?.name}</h5>
+          <h5>Status: {infoDetail.status}</h5>
+          <h5>Specie: {infoDetail.species}</h5>
+          <h5>Gender: {infoDetail.gender}</h5>
+          <h5>Origin: {infoDetail.origin?.name}</h5>
           <div>
             <img src={infoDetail.image} alt={infoDetail.name} />
           </div>
