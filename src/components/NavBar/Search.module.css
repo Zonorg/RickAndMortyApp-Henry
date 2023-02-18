@@ -1,7 +1,7 @@
 .container {
   display: flex;
   justify-content: right;
-  margin-left: 300px;
+  margin-left: 50px;
   gap: 8px;
 }
 

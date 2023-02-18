@@ -1,15 +1,18 @@
-img{
-    height: auto;
-    width: 500px;
-    border-radius: 12px;
+img {
+  height: auto;
+  width: 500px;
+  border-radius: 12px;
 }
 
-h3, p{
-    color: beige;
+h3, p {
+  color: beige;
+}
+.linkHenry:hover {
+  color: yellow;
 }
 
-@media (max-width: 600px){
-    img{
-        width: 400px;
-    }
+@media (max-width: 600px) {
+  img {
+    width: 400px;
+  }
 }

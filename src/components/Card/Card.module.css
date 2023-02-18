@@ -20,6 +20,10 @@
   margin-left: 250px;
 }
 
+.favouriteButton:hover {
+  background-color: beige;
+}
+
 .closeButton {
   cursor: pointer;
   background-color: red;
@@ -32,10 +36,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
 }
 .closeButton:hover {
-  background-color: red;
-  color: white;
+  background-color: white;
+  color: red;
 }
 .name {
   color: beige;
@@ -45,7 +50,7 @@
 }
 
 .species {
-  color: beige;
+  color: #2ca3ad;
   font-size: 16px;
 }
 
@@ -62,4 +67,8 @@
   border: 8px;
   border-radius: 8px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+img:hover {
+  background-color: #fafafa;
 }
