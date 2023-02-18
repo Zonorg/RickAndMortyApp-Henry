@@ -18,6 +18,16 @@ export default function SearchBar(props) {
     props.onSearch(text);
   }
 
+  function handleRandomClick() {
+    props.onSearch(getRandomCharacter());
+  }
+
+  function getRandomCharacter() {
+    const maxId = 826; // Este es el ID máximo de los personajes disponibles en la API
+    const randomId = Math.floor(Math.random() * maxId) + 1; // Genera un número aleatorio entre 1 y el ID máximo
+    return randomId.toString(); // Devuelve el ID generado como una cadena de texto
+  }
+
   return (
     <div className={styles.container}>
       <input
@@ -29,6 +39,9 @@ export default function SearchBar(props) {
       />
       <button onClick={handleClick} className={styles.button}>
         Agregar
+      </button>
+      <button onClick={handleRandomClick} className={styles.button}>
+        Random
       </button>
     </div>
   );

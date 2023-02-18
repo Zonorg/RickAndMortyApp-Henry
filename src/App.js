@@ -53,6 +53,24 @@ function App() {
     setCharacters(characters.filter((character) => character.id !== id));
   }
 
+  function getRandomCharacter() {
+    const randomId = Math.floor(Math.random() * 826) + 1;
+    fetch(`https://rickandmortyapi.com/api/character/${randomId}`)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.name) {
+          if (!characters.some((character) => character.id === data.id)) {
+            setCharacters((oldChars) => [...oldChars, data]);
+            navigate("/home");
+          } else {
+            window.alert("Este personaje ya fue agregado.");
+          }
+        } else {
+          window.alert("No se pudo obtener el personaje aleatorio.");
+        }
+      });
+  }
+
   return (
     <div className="App" style={{ padding: "25px" }}>
       {location.pathname !== "/" && <Nav onSearch={onSearch} logOut={logOut} />}
