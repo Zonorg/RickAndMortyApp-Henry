@@ -1,25 +1,26 @@
 import "./App.css";
 import { useState, useEffect } from "react";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import Error404 from "./components/Utilities/Error404";
+import Form from "./components/Form/Form.jsx";
 import Nav from "./components/NavBar/Nav.jsx";
 import Cards from "./components/Card/Cards.jsx";
 import About from "./components/About/About.jsx";
+import Favorites from "./components/Utilities/Favorites";
 import Detail from "./components/Detail/Detail.jsx";
-import Form from "./components/Form/Form.jsx";
-import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
-import Error404 from "./components/Utilities/Error404";
 
 function App() {
   const [characters, setCharacters] = useState([]);
   const navigate = useNavigate();
   const location = useLocation();
   const [access, setAccess] = useState(false);
-  const username = "nviscio@gmail.com";
-  const password = "renzo1234";
+
+  const username = "";
+  const password = "";
   const logOut = () => {
     setAccess(false);
     navigate("/");
   };
-
   function login(userData) {
     if (userData.password === password && userData.username === username) {
       setAccess(true);
@@ -64,6 +65,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/" element={<Form login={login} />} />
+        <Route path="/favorites" element={<Favorites />} />
         {characters.length === 0 && <Route path="*" element={<Error404 />} />}
       </Routes>
     </div>

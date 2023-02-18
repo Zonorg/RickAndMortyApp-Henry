@@ -13,6 +13,9 @@ export default function Nav(props) {
       <Link to="/about">
         <span>About</span>
       </Link>
+      <Link to="/favorites">
+        <span>Favorites</span>
+      </Link>
       <SearchBar onSearch={props.onSearch} />
     </div>
   );
