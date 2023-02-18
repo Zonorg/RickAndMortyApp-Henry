@@ -12,7 +12,7 @@
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
   background-image: url(/public/fondoCards.png);
-  box-shadow: 0 0 20px #fafafa;
+  box-shadow: 0 0 20px beige;
 }
 
 .favouriteButton {
@@ -67,8 +67,4 @@
   border: 8px;
   border-radius: 8px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-
-img:hover {
-  background-color: #fafafa;
 }

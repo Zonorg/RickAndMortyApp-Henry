@@ -21,6 +21,7 @@ export default function Form({ login }) {
 
   return (
     <div>
+      <img src="./hero.png" alt="hero" />
       <h1>Login</h1>
       <form className={styles.containerForm} onSubmit={handleSubmit}>
         <label htmlFor="username">Username: </label>

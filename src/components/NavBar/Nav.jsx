@@ -1,10 +1,12 @@
 import React from "react";
 import SearchBar from "./SearchBar";
-import { Link } from "react-router-dom";
-
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Nav.module.css";
 
 export default function Nav(props) {
+  const location = useLocation();
+  const showSearchBar = location.pathname !== "/about";
+
   return (
     <div className={styles.containerNav}>
       <Link to="/home">
@@ -16,7 +18,7 @@ export default function Nav(props) {
       <Link to="/about">
         <span>About</span>
       </Link>
-      <SearchBar onSearch={props.onSearch} />
+      {showSearchBar && <SearchBar onSearch={props.onSearch} />}
     </div>
   );
 }
