@@ -26,7 +26,7 @@ export default function Card({ name, species, gender, image, onClose, id }) {
         setFav(true);
       }
     });
-  }, [myFavorites]);
+  });
 
   return (
     <div className={styles.container}>
