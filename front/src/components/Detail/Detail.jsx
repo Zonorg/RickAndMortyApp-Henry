@@ -12,7 +12,7 @@ export default function Detail(props) {
   }
 
   useEffect(() => {
-    fetch(`https://rickandmortyapi.com/api/character/${id}`)
+    fetch(`http://localhost:3001/rickandmorty/detail/${id}`)
       .then((response) => response.json())
       .then((char) => {
         if (char.name) {
