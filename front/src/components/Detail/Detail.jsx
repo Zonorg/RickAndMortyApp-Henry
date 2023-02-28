@@ -41,7 +41,7 @@ export default function Detail(props) {
           <h5>Status: {infoDetail.status}</h5>
           <h5>Specie: {infoDetail.species}</h5>
           <h5>Gender: {infoDetail.gender}</h5>
-          <h5>Origin: {infoDetail.origin?.name}</h5>
+          <h5>Origin: {infoDetail.origin}</h5>
           <div>
             <img src={infoDetail.image} alt={infoDetail.name} />
           </div>
