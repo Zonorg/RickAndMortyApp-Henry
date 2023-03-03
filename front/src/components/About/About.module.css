@@ -1,10 +1,11 @@
-img {
+.imgAbout {
   height: auto;
-  width: 500px;
+  width: 600px;
   border-radius: 12px;
 }
 
-h3, p {
+h3,
+p {
   color: beige;
 }
 .linkHenry:hover {
@@ -12,7 +13,8 @@ h3, p {
 }
 
 @media (max-width: 600px) {
-  img {
-    width: 400px;
+  .imgAbout {
+    width: 300px;
   }
 }
+

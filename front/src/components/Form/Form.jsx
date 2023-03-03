@@ -21,9 +21,9 @@ export default function Form({ login }) {
 
   return (
     <div>
-      <img className={styles.loginImg} src="./hero.png" alt="hero" />
-      <h1>Login</h1>
       <form className={styles.containerForm} onSubmit={handleSubmit}>
+        <img className={styles.imgLogin} src="./hero.png" alt="hero" />
+        <h1 className={styles.h1Login}>Login</h1>
         <label htmlFor="username">Username: </label>
         <input
           type="text"

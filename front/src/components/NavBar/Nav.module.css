@@ -16,3 +16,10 @@ a:visited {
 a:hover {
   color: beige;
 }
+
+@media (max-width: 600px) {
+  .containerNav {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}

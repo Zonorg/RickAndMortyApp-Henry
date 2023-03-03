@@ -9,7 +9,11 @@ export default function About(props) {
           GitHub
         </a>
       </h3>
-      <img src="https://pbs.twimg.com/media/FPjm84FWUAMyq1a.jpg" alt="Gohan" />
+      <img
+        className={styles.imgAbout}
+        src="https://samdrewtakeson.com/wp-content/uploads/2020/02/rick-and-morty-1-1920x1024.jpg"
+        alt="RickAndMorty"
+      />
       <p>Descripción del trabajo realizado: </p>
       <p>
         Aplicación de Rick y Morty creada con React para la integración de lo

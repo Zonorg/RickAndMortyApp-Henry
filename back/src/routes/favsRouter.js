@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { favs } = require("../utils/favs");
+let { favs } = require("../utils/favs");
 
 const favsRouter = Router();
 

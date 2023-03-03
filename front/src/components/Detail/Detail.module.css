@@ -1,4 +1,4 @@
-.container {
+.containerDetail {
   padding: 12px;
   margin-top: 50px;
   background-color: rgb(65, 65, 80);
@@ -8,9 +8,10 @@
   margin-right: 50px;
 }
 
-img{
+.imgDetail{
   height: 100%;
   width: 300px;
+  border-radius: 12px;
 }
 
 h3 {
@@ -31,4 +32,17 @@ h5 {
 }
 .botonVolver:hover {
   cursor: pointer;
+}
+
+
+
+@media (max-width: 600px) {
+  .containerDetail{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .imgDetail {
+    width: 200px;
+  }
 }

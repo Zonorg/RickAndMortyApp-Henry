@@ -29,7 +29,7 @@ export default function Card({ name, species, gender, image, onClose, id }) {
   });
 
   return (
-    <div className={styles.container}>
+    <div className={styles.containerCard}>
       <button onClick={onClose} className={styles.closeButton}>
         X
       </button>
@@ -47,7 +47,7 @@ export default function Card({ name, species, gender, image, onClose, id }) {
         <h2 className={styles.name}>{name}</h2>
         <h2 className={styles.species}>{species}</h2>
         <h2 className={styles.gender}>{gender}</h2>
-        <img src={image} alt={name} className={styles.image} />
+        <img src={image} alt={name} className={styles.imgCard} />
       </Link>
     </div>
   );

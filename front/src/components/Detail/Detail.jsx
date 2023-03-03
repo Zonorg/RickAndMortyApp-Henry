@@ -29,7 +29,7 @@ export default function Detail(props) {
   }, [id]);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.containerDetail}>
       <div>
         <button onClick={backToHome} className={styles.botonVolver}>
           Volver
@@ -43,7 +43,7 @@ export default function Detail(props) {
           <h5>Gender: {infoDetail.gender}</h5>
           <h5>Origin: {infoDetail.origin}</h5>
           <div>
-            <img src={infoDetail.image} alt={infoDetail.name} />
+            <img className={styles.imgDetail} src={infoDetail.image} alt={infoDetail.name} />
           </div>
         </div>
       ) : (
