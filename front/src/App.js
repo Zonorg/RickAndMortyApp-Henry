@@ -17,7 +17,7 @@ function App() {
 
   const username = "";
   const password = "";
-  
+
   const logOut = () => {
     setAccess(false);
     navigate("/");
@@ -43,10 +43,8 @@ function App() {
             setCharacters((oldChars) => [...oldChars, data]);
             navigate("/home");
           } else {
-            window.alert("Este personaje ya fue agregado.");
+            window.alert("Este personaje ya fue agregado");
           }
-        } else {
-          window.alert("No hay personajes con ese ID");
         }
       });
   }

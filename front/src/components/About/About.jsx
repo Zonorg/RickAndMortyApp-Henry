@@ -11,7 +11,7 @@ export default function About(props) {
       </h3>
       <img
         className={styles.imgAbout}
-        src="https://samdrewtakeson.com/wp-content/uploads/2020/02/rick-and-morty-1-1920x1024.jpg"
+        src="./imgAbout.png"
         alt="RickAndMorty"
       />
       <p>

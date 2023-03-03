@@ -14,14 +14,6 @@
   border-radius: 12px;
 }
 
-h3 {
-  color: aquamarine;
-}
-
-h5 {
-  color: cadetblue;
-}
-
 @media (max-width: 600px) {
   .containerDetail{
     margin-left: 10px;

@@ -6,17 +6,6 @@
   border-radius: 12px;
 }
 
-a:link,
-a:visited {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  transition: 0.3s;
-}
-a:hover {
-  color: beige;
-}
-
 @media (max-width: 600px) {
   .containerNav {
     display: flex;

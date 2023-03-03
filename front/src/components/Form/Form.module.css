@@ -1,8 +1,7 @@
 .containerForm {
   display: flex;
-  flex-flow: column wrap;
-  max-width: 300px;
-  padding-left: 450px;
+  flex-direction: column;
+  align-items: center;
   color: beige;
 }
 
@@ -10,45 +9,12 @@
   width: 400px;
 }
 
-.h1Login {
-  color: rgb(63, 207, 63);
-}
-
 .containerForm label {
   font-weight: bold;
   padding-bottom: 7px;
 }
 
-.containerForm label:textarea {
-  background-color: rgb(18, 176, 201);
-}
-
-input {
-  border-radius: 8px;
-  height: 28px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-button {
-  background-color: rgb(63, 207, 63);
-  color: beige;
-  font-weight: bold;
-  border-radius: 8px;
-  height: 28px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  transition: 0.3s;
-}
-
-button:hover {
-  cursor: pointer;
-  color: black;
-}
-
 @media (max-width: 600px) {
-  .containerForm {
-    padding: 10px;
-  }
-
   .imgLogin {
     width: 300px;
   }

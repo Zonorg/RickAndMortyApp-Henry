@@ -4,24 +4,12 @@
   align-items: center;
   border: 1px solid black;
   padding: 8px;
-  margin-bottom: 16px;
   margin-top: 50px;
   width: 300px;
   height: 400px;
   border-radius: 8px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
   background-image: url(/public/fondoCards.png);
   box-shadow: 0 0 20px beige;
-}
-
-.favouriteButton {
-  border-radius: 7px;
-  margin-left: 250px;
-}
-
-.favouriteButton:hover {
-  background-color: beige;
 }
 
 .closeButton {
@@ -29,19 +17,24 @@
   background-color: red;
   color: white;
   border: 1px solid black;
-  border-radius: 7px;
   margin-left: 250px;
   width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: 0.3s;
 }
 .closeButton:hover {
   background-color: white;
   color: red;
 }
+
+.favouriteButton {
+  border: 1px solid black;
+  margin-left: 250px;
+}
+
+.favouriteButton:hover {
+  background-color: beige;
+}
+
 .name {
   color: beige;
   margin-top: 16px;
@@ -50,7 +43,7 @@
 }
 
 .species {
-  color: #2ca3ad;
+  color: rgb(18, 176, 201);
   font-size: 16px;
 }
 
