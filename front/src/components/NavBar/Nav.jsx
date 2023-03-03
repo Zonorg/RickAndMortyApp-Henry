@@ -18,6 +18,9 @@ export default function Nav(props) {
       <Link to="/about">
         <span>About</span>
       </Link>
+      <Link onClick={props.logOut}>
+        <span>Log Out</span>
+      </Link>
       {showSearchBar && <SearchBar onSearch={props.onSearch} />}
     </div>
   );

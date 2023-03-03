@@ -23,14 +23,13 @@
   background-color: rgb(18, 176, 201);
 }
 
-.containerForm input {
+input {
   border-radius: 8px;
   height: 28px;
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 button {
-  height: 40px;
   background-color: rgb(63, 207, 63);
   color: beige;
   font-weight: bold;

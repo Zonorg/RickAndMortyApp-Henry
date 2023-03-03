@@ -14,10 +14,12 @@ export default function About(props) {
         src="https://samdrewtakeson.com/wp-content/uploads/2020/02/rick-and-morty-1-1920x1024.jpg"
         alt="RickAndMorty"
       />
-      <p>Descripción del trabajo realizado: </p>
       <p>
+        Descripción del trabajo realizado:
+        <br />
+        <br />
         Aplicación de Rick y Morty creada con React para la integración de lo
-        aprendido en el Módulo 2 de{" "}
+        aprendido en el BootCamp{" "}
         <a
           className={styles.linkHenry}
           href="https://www.soyhenry.com/"
@@ -26,15 +28,12 @@ export default function About(props) {
         >
           Henry
         </a>
-        .{" "}
-        <p>
-          La interfaz permite a los usuarios buscar los personajes de la serie
-          por id, seleccionarlos y ver su descripción.{" "}
-        </p>
-        <p>
-          La sección detallada de personajes incluye información de cada uno de
-          ellos, como nombre, especie, género y su origen de aparición.
-        </p>
+        .<br /> <br />
+        La interfaz permite a los usuarios buscar los personajes de la serie por
+        id, seleccionarlos y ver su descripción. <br />
+        <br />
+        La sección detallada de personajes incluye información de cada uno de
+        ellos, como nombre, especie, género y su origen de aparición.
       </p>
     </div>
   );

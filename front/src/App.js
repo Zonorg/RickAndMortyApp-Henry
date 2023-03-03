@@ -17,10 +17,12 @@ function App() {
 
   const username = "";
   const password = "";
+  
   const logOut = () => {
     setAccess(false);
     navigate("/");
   };
+
   function login(userData) {
     if (userData.password === password && userData.username === username) {
       setAccess(true);
