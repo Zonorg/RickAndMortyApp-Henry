@@ -1,0 +1,22 @@
+.containerFooter {
+  background-color: beige;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 12px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.containerFooter p {
+  color: blue;
+}
+
+@media (max-width: 600px) {
+  .containerFooter {
+    max-height: 80px;
+    font-size: 10px;
+  }
+}

@@ -8,6 +8,7 @@ import Cards from "./components/Card/Cards.jsx";
 import About from "./components/About/About.jsx";
 import Favorites from "./components/Utilities/Favorites";
 import Detail from "./components/Detail/Detail.jsx";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -34,19 +35,25 @@ function App() {
     !access && navigate("/");
   }, [access]);
 
-  function onSearch(id) {
-    fetch(`http://localhost:3001/rickandmorty/onsearch/${id}`)
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.name) {
-          if (!characters.some((character) => character.id === data.id)) {
-            setCharacters((oldChars) => [...oldChars, data]);
-            navigate("/home");
-          } else {
-            window.alert("Este personaje ya fue agregado");
-          }
+  async function onSearch(id) {
+    try {
+      const response = await fetch(
+        `http://localhost:3001/rickandmorty/onsearch/${id}`
+      );
+      const data = await response.json();
+      if (data.name) {
+        if (!characters.some((character) => character.id === data.id)) {
+          setCharacters((oldChars) => [...oldChars, data]);
+          navigate("/home");
+        } else {
+          window.alert("Este personaje ya fue agregado.");
         }
-      });
+      } else {
+        window.alert(`El personaje con el ID ${id} no existe.`);
+      }
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   function onClose(id) {
@@ -68,6 +75,7 @@ function App() {
         <Route path="/favorites" element={<Favorites />} />
         {characters.length === 0 && <Route path="*" element={<Error404 />} />}
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

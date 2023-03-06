@@ -25,7 +25,7 @@ export default function SearchBar(props) {
   function getRandomCharacter() {
     const maxId = 826; // Este es el ID máximo de los personajes disponibles en la API
     const randomId = Math.floor(Math.random() * maxId) + 1; // Genera un número aleatorio entre 1 y el ID máximo
-    return randomId.toString(); // Devuelve el ID generado como una cadena de texto
+    return randomId.toString();
   }
 
   return (
