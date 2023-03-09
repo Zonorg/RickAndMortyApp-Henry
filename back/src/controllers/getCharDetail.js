@@ -26,3 +26,13 @@ const getCharDetail = async (req, res) => {
 };
 
 module.exports = { getCharDetail };
+
+// const character = {
+//   image: data.image,
+//   name: data.name,
+//   gender: data.gender,
+//   species: data.species,
+//   status: data.status,
+//   origin: data.origin.name,
+//   id: data.id,
+// };

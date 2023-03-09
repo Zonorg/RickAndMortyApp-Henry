@@ -28,4 +28,5 @@ const characters = [
     image: "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
   },
 ];
+
 module.exports = characters;
