@@ -1,15 +1,16 @@
-.container {
+.containerSearchBar {
   display: flex;
-  justify-content: right;
-  margin-left: 50px;
-  gap: 8px;
+  gap: 5px;
+}
+
+.containerSearchBar button{
+padding: 0 5px;
 }
 
 @media (max-width: 600px) {
-  .container {
+  .containerSearchBar {
     display: flex;
     flex-flow: column wrap;
     padding-right: 40px;
-
   }
 }

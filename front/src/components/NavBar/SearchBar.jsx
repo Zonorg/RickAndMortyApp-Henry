@@ -29,7 +29,7 @@ export default function SearchBar(props) {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.containerSearchBar}>
       <input
         className={styles.input}
         type="search"
@@ -38,7 +38,7 @@ export default function SearchBar(props) {
         onKeyDown={handleKeyDown}
       />
       <button onClick={handleClick} className={styles.button}>
-        Agregar
+        Add
       </button>
       <button onClick={handleRandomClick} className={styles.button}>
         Random

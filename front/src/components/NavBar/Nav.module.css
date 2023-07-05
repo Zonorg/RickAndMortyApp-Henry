@@ -1,9 +1,18 @@
 .containerNav {
-  background-color: rgb(18, 176, 201);
-  padding: 12px;
-  gap: 12px;
   display: flex;
-  border-radius: 12px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(18, 176, 201);
+  padding: 15px 0;
+  border-radius: 5px;
+}
+.containerNav a {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+.containerNav a:hover {
+  background-color: rgb(63, 207, 63);
 }
 
 @media (max-width: 600px) {
