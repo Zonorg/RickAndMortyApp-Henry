@@ -1,5 +1,9 @@
 import styles from "./Footer.module.css";
 
 export default function Footer() {
-  return <div className={styles.containerFooter}></div>;
+  return (
+    <footer className={styles.container_footer}>
+      <p>Rick and Morty App</p>
+    </footer>
+  );
 }

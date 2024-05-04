@@ -20,32 +20,40 @@ export default function Form({ login }) {
   }
 
   return (
-    <div>
-      <form className={styles.containerForm} onSubmit={handleSubmit}>
+    <div className={styles.login_page}>
+      <div className={styles.img_container}>
         <img
-          className={styles.imgLogin}
-          src="./imgLogin.png"
+          className={styles.img_login}
+          src="./login-image-transparent.png"
           alt="LoginRickAndMorty"
         />
-        <h1 className={styles.h1Login}>Login</h1>
-        <label htmlFor="username">Username: </label>
-        <input
-          type="text"
-          name="username"
-          onChange={handleInputChange}
-          value={userData.username}
-        />
-        <p>{errors.username}</p>
-        <label htmlFor="username">Password: </label>
-        <input
-          type="password"
-          name="password"
-          onChange={handleInputChange}
-          value={userData.password}
-        />
-        <p>{errors.password}</p>
-        <button type="submit">Ingresar</button>
-      </form>
+      </div>
+      <div>
+        <form className={styles.containerForm} onSubmit={handleSubmit}>
+          <img className={styles.img_title} src="./imgLogin.png" alt="Title" />
+          <label htmlFor="username">Username: </label>
+          <input
+            className={styles.input_login}
+            type="text"
+            name="username"
+            onChange={handleInputChange}
+            value={userData.username}
+          />
+          <p>{errors.username}</p>
+          <label htmlFor="username">Password: </label>
+          <input
+            className={styles.input_login}
+            type="password"
+            name="password"
+            onChange={handleInputChange}
+            value={userData.password}
+          />
+          <p>{errors.password}</p>
+          <button className={styles.login_button} type="submit">
+            Login
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

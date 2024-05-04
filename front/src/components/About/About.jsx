@@ -11,27 +11,28 @@ export default function About(props) {
       </h3>
       <img
         className={styles.imgAbout}
-        src="./imgAbout.png"
+        src="./about-img.jpg"
         alt="RickAndMorty"
       />
+      <p>Descripción del trabajo realizado: </p>
       <p>
-        Descripción del trabajo realizado:
-        <br />
-        <br />
         Aplicación de Rick y Morty creada con React para la integración de lo
-        aprendido en el BootCamp{" "}
-        <a
-          className={styles.linkHenry}
-          href="https://www.soyhenry.com/"
-          target={"_blank"}
-          rel="noreferrer"
-        >
-          Henry
-        </a>
-        .<br /> <br />
+        aprendido en el BootCamp
+      </p>
+      <a
+        className={styles.linkHenry}
+        href="https://www.soyhenry.com/"
+        target={"_blank"}
+        rel="noreferrer"
+      >
+        Henry
+      </a>
+      .{" "}
+      <p>
         La interfaz permite a los usuarios buscar los personajes de la serie por
-        id, seleccionarlos y ver su descripción. <br />
-        <br />
+        id, seleccionarlos y ver su descripción.{" "}
+      </p>{" "}
+      <p>
         La sección detallada de personajes incluye información de cada uno de
         ellos, como nombre, especie, género y su origen de aparición.
       </p>

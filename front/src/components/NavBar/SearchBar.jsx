@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from "./Search.module.css";
+import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
+import { IoIosAdd } from "react-icons/io";
 
 export default function SearchBar(props) {
   const [text, setText] = useState("");
@@ -31,16 +33,19 @@ export default function SearchBar(props) {
   return (
     <div className={styles.containerSearchBar}>
       <input
-        className={styles.input}
         type="search"
         value={text}
+        placeholder="Search any character by id..."
         onChange={handleChange}
         onKeyDown={handleKeyDown}
+        className={styles.searchbar_input}
       />
-      <button onClick={handleClick} className={styles.button}>
+      <button onClick={handleClick} className={styles.searchbar_button}>
+        <IoIosAdd size={25} />
         Add
       </button>
-      <button onClick={handleRandomClick} className={styles.button}>
+      <button onClick={handleRandomClick} className={styles.searchbar_button}>
+        <GiPerspectiveDiceSixFacesRandom size={25} />
         Random
       </button>
     </div>

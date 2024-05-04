@@ -1,62 +1,83 @@
-.containerCard {
+.container_card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-  margin-top: 50px;
-  width: 300px;
-  height: 400px;
-  border-radius: 8px;
-  background-image: url("/public/fondoCards.png");
-  box-shadow: 0 0 20px beige;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
 
-.closeButton {
-  cursor: pointer;
-  background-color: red;
+.container_card:hover {
+  background-color: #313234;
+}
+
+.close_button {
+  background-color: transparent;
   color: white;
   margin-left: 250px;
   transition: 0.3s;
   height: 25px;
   width: 30px;
 }
-.closeButton:hover {
-  background-color: white;
-  color: red;
+
+.img_card {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-.favouriteButton {
-  margin-top: 1px;
-  margin-left: 250px;
+.card_content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.card_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom_buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.favorite_button {
   height: 25px;
   width: 30px;
+  margin: auto;
+  color: #01b4c6;
+  background-color: transparent;
 }
-
-.favouriteButton:hover {
-  background-color: beige;
-}
-
 .name {
-  color: beige;
-  margin-top: 16px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
 }
 
-.species {
-  color: rgb(18, 176, 201);
-  font-size: 16px;
+.subtitles {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #fff;
 }
 
-.gender {
-  color: rgb(63, 207, 63);
-  font-size: 16px;
+.read_more {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+  border-radius: 999px;
+  width: 110px;
+  background-color: #313234;
+  color: #ececec;
+  border: none;
 }
 
-.imgCard {
-  width: 200px;
-  height: 200px;
-  border-radius: 8px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+.read_more:hover {
+  background-color: #01b4c6;
 }

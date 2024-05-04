@@ -61,21 +61,28 @@ function App() {
   }
 
   return (
-    <div className="App" style={{ padding: "25px" }}>
+    <div className="App">
       {location.pathname !== "/" && <Nav onSearch={onSearch} logOut={logOut} />}
-      <Routes>
-        <Route
-          path="/home"
-          element={<Cards characters={characters} onClose={onClose} />}
-        />
-
-        <Route path="/about" element={<About />} />
-        <Route path="/detail/:id" element={<Detail />} />
-        <Route path="/" element={<Form login={login} />} />
-        <Route path="/favorites" element={<Favorites />} />
-        {characters.length === 0 && <Route path="*" element={<Error404 />} />}
-      </Routes>
-      <Footer></Footer>
+      <div className="main_content">
+        <Routes>
+          <Route
+            path="/home"
+            element={
+              <Cards
+                characters={characters}
+                onSearch={onSearch}
+                onClose={onClose}
+              />
+            }
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="/detail/:id" element={<Detail />} />
+          <Route path="/" element={<Form login={login} />} />
+          <Route path="/favorites" element={<Favorites />} />
+          {characters.length === 0 && <Route path="*" element={<Error404 />} />}
+        </Routes>
+      </div>
+      <Footer />
     </div>
   );
 }
